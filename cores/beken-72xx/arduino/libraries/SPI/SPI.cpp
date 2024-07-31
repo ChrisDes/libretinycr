@@ -1,8 +1,8 @@
 #include "SPIPrivate.h"
 #include "SPI.h"
 
-// Eliminar la creación de una nueva instancia de SPIClass
-// SPIClass SPI;
+// No crear una nueva instancia de SPIClass
+// SPIClass SPI; // Esta línea ha sido eliminada
 
 #define SPI_PERI_CLK_26M (26 * 1000 * 1000)
 #define SPI_PERI_CLK_DCO (80 * 1000 * 1000)
