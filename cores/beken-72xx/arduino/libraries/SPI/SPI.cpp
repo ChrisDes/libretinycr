@@ -1,8 +1,8 @@
 #include "SPIPrivate.h"
 #include "SPI.h"
 
-// No crear una nueva instancia de SPIClass
-// SPIClass SPI; // Esta línea ha sido eliminada
+// Eliminar la creación de una nueva instancia de SPIClass
+// SPIClass SPI;
 
 #define SPI_PERI_CLK_26M (26 * 1000 * 1000)
 #define SPI_PERI_CLK_DCO (80 * 1000 * 1000)
@@ -156,7 +156,6 @@ void SPIClass::commitTransaction() {
 }
 
 void SPIClass::isrHandlerStatic(void *param) {
-    SPI.isrHandler(param);
 }
 
 void SPIClass::isrHandler(void *param) {
